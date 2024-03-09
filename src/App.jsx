@@ -3,19 +3,19 @@ import CategoriesPlaces from "../pages/CategoriesPlaces";
 import FeaturedPlaces from "../pages/FeaturedPlaces";
 import Footer from "../components/Footer";
 import SearchPlaces from "../components/SearchPlaces";
-import "./App.css";
+import "../components/GlobalStyles.css";
+import "../components/HeaderStyle.css";
 
 function App() {
   return (
     <>
       <main>
-        <section>
-          <NavigatorBar />
-        </section>
-        <section>
-          <SearchPlaces></SearchPlaces>
-        </section>
-        <section>
+        <section className="header-app">
+             <section>
+                <NavigatorBar />
+              </section>
+          </section>
+       <section>
           <CategoriesPlaces />
         </section>
         <section>

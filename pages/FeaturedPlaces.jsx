@@ -9,14 +9,18 @@ function FeaturedPlaces() {
         <button>Visitar </button>
       </div>
       <div>
-      <img className="photo " src="/images/restaurante.jpg" alt="Restaurante" />
+        <img
+          className="photo "
+          src="/images/restaurante.jpg"
+          alt="Restaurante"
+        />
         <h1>Restaurante mi pueblo</h1>
         <h4>Lugar: Sitio Mata</h4>
         <p> Descripcion: Deliciosas comidas tipicas costarricenses</p>
         <button>Visitar </button>
       </div>
       <div>
-      <img className="photo " src="/images/farmacia.png" alt="Farmacia" />
+        <img className="photo " src="/images/farmacia.png" alt="Farmacia" />
         <h1>Farmacia TuSalud</h1>
         <p> Descripcion: Variedad de medicamentos que te sanan</p>
         <button>Visitar </button>

@@ -1,0 +1,8 @@
+.navigator-bar{
+  display: flex;
+  background-color: rgb(163, 87, 235);
+  color: rgb(57, 128, 57);
+}
+.navigator-bar-nav a{
+  text-decoration: solid;
+}
