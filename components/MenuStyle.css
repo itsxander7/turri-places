@@ -1,32 +1,50 @@
-.sidebar {
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  background-color: #333;
-  transition: left 0.3s ease;
+.menu-information-app {
+  display: flex; /* Establece un contenedor flexible */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
 }
 
-.sidebar.open {
-  left: 0;
+.menu-information-app > * {
+  margin: 0 10px; /* Agrega márgenes entre los elementos */
+}
+.referenc-component {
+  display: flex;
+}
+/*pasar a otro doc*/
+.menu-information-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.toggle-button {
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 10px;
+.footer {
+  display: flex; /* Convertir el footer en un contenedor flexible */
+  justify-content: center; /* Centrar los elementos horizontalmente */
+  align-items: center; /* Centrar los elementos verticalmente */
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+
 }
 
-.menu {
-  list-style-type: none;
-  padding: 0;
+.footer > * {
+  margin: 0 10px; /* Espaciado entre los elementos */
+}
+.footer-information {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+  justify-content: space-between; /* Distribuye uniformemente los elementos a lo largo del eje principal */
+  align-items: center; /* Centra los elementos verticalmente */
 }
 
-.menu li {
-  padding: 15px;
-  color: white;
+.footer-information section {
+  flex: 1; /* Hace que cada sección ocupe todo el espacio disponible */
+  padding: 20px; /* Añade espacio interno */
+}
+
+.footer-information section h2 {
+  margin-bottom: 10px; /* Espacio entre el título y los párrafos */
+}
+
+.footer-information section:last-child {
+  flex-basis: 100%; /* Hace que el último elemento ocupe todo el ancho */
 }

@@ -1,8 +1,52 @@
-.navigator-bar{
+/* Estilos base */
+.navigator-bar {
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px 20px; 
   display: flex;
-  background-color: rgb(163, 87, 235);
-  color: rgb(57, 128, 57);
+  justify-content: space-between;
+  align-items: center;
 }
-.navigator-bar-nav a{
-  text-decoration: solid;
+
+.navigator-bar-nav a {
+  color: #fff; 
+  text-decoration: none; 
+  margin-right: 15px; 
+}
+
+.navigator-bar-nav a:hover {
+  color: #ffd700; 
+}
+
+.navigator-bar-icono-login button {
+  background-color: transparent;
+  color: #fff; 
+  border: none; 
+  cursor: pointer; 
+  margin-left: 15px; 
+}
+
+.navigator-bar-icono-login button:hover {
+  color: #ffd700; 
+}
+
+/* Media query para dispositivos con ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+  .navigator-bar {
+    flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+
+  .navigator-bar-nav {
+    margin-top: 10px; /* Agrega un espacio entre el título y los enlaces */
+  }
+
+  .navigator-bar-nav a {
+    display: block; /* Convierte los enlaces en bloques para ocupar toda la anchura */
+    margin: 5px 0; /* Agrega un espacio entre cada enlace */
+  }
+
+  .navigator-bar-icono-login {
+    margin-top: 10px; /* Agrega un espacio entre los enlaces y los botones */
+  }
 }

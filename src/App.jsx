@@ -5,27 +5,24 @@ import Footer from "../components/Footer";
 import SearchPlaces from "../components/SearchPlaces";
 import "../components/GlobalStyles.css";
 import "../components/HeaderStyle.css";
+import "../components/MenuStyle.css";
 
 function App() {
   return (
-    <>
-      <main>
-        <section className="header-app">
-             <section>
-                <NavigatorBar />
-              </section>
-          </section>
-       <section>
+    <main className="pading-main">
+        <header>
+           <NavigatorBar />
+        </header>
+        <body>
+          <section className="menu-information-app">
           <CategoriesPlaces />
-        </section>
-        <section>
           <FeaturedPlaces />
-        </section>
-        <section>
-          <Footer></Footer>
-        </section>
-      </main>
-    </>
+          </section>
+        </body>
+        <footer className="footer">
+          <Footer />
+        </footer>  
+    </main>
   );
 }
 export default App;

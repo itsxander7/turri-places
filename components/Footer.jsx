@@ -1,17 +1,16 @@
 function Footer(){
   return(
-    <footer>
-      <section>
+      <section className="footer-information">
       <section>
       <h2>Informacion de contacto</h2>
       <p>Turrialba, Cartago, Costa Rica</p>
       <p>Contactanos</p>
       </section>
-      <section>
+      <section className="footer-social-media">
       <h2>Redes Sociales</h2>
       <p>Agregar iconos svg</p>
       </section>
-      <section>
+      <section className="footer-terms-privacy">
       <h2>Terminos y Privacias</h2>
       <p>Terminos de uso</p>
       <p>Politicas de privacidad</p>
@@ -19,8 +18,7 @@ function Footer(){
       <section>
         Turri Places © 2024 Brand CR. All rights reserved
       </section>
-      </section>
-     </footer>   
+      </section> 
   );
 }
 export default Footer;
